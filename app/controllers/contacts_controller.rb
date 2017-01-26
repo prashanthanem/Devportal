@@ -12,10 +12,10 @@ class ContactsController < ApplicationController
             email = params[:contact][:email]
             body = params[:contact][:comments]
             ContactMailer.contact_email(name,email,body).deliver
-            flash[:success] = "Message sent"
+            flash[:success] = "Thanks for your comments !!!"
           redirect_to new_contact_path
         else
-            flash[:danger] = "Error occured,message not been sent"
+            flash[:danger] = "Sorry!! I don't accept any Null Values"
           redirect_to new_contact_path
         end
    end
