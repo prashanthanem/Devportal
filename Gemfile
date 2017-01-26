@@ -24,6 +24,8 @@ gem 'bootstrap-sass', '~> 3.3.7'
 # Use font awesome library for icons
 gem 'font-awesome-sass', '~> 4.7.0'
 
+gem 'devise', '~> 4.2.0'
+
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
